@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title>CI/CD for Hexo with AppVeyor</title>
+    <url>/2021/01/04/CI-CD-for-Hexo-with-AppVeyor/</url>
+    <content><![CDATA[<p>当我在 <a href="https://pages.github.com/">Github Pages</a> 部署我的 <a href="https://hexo.io/">Hexo</a> 静态网站的时候，我总是需要手动的执行指令 <code>hexo deploy</code> 来将静态网页推送到 <a href="https://github.com/">Github</a> 上。</p>
+<hr>
+<p><a href="https://imgchr.com/i/sCMCu9"><img data-src="https://s3.ax1x.com/2021/01/03/sCMCu9.png" alt="sCMCu9.png"></a></p>
+<p><img data-src="/../img/CI-CD-for-Hexo-with-AppVeyor/martin-shreder-5Xwaj9gaR0g-unsplash.jpg" alt="123 "></p>
+]]></content>
+      <tags>
+        <tag>DevOps</tag>
+        <tag>Hexo</tag>
+        <tag>CI/CD</tag>
+        <tag>AppVeyor</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Counter/Timer</title>
+    <url>/2019/11/09/Counter-Timer/</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
+    <title>6_041x 概率论——不确定性的科学</title>
+    <url>/2018/07/30/Overview/</url>
+    <content><![CDATA[<h1 id="Overview"><a href="#Overview" class="headerlink" title="Overview"></a>Overview</h1><ul>
+<li><a href="#overview">Overview</a><ul>
+<li><a href="#course-introduction">Course introduction</a></li>
+<li><a href="#course-objectives">Course objectives</a></li>
+<li><a href="#a-guide-on-how-to-use-the-wealth-of-available-material">A guide on how to use the wealth of available material</a></li>
+<li><a href="#syllabus">Syllabus</a></li>
+</ul>
+</li>
+</ul>
+<h2 id="Course-introduction"><a href="#Course-introduction" class="headerlink" title="Course introduction"></a>Course introduction</h2><p>Welcome to 6.041x, an introduction to probabilistic models, including random processes and the basic elements of statistical inference.</p>
+<p>The world is full of uncertainty: accidents, storms, unruly financial markets, noisy communications. The world is also full of data. Probabilistic modeling and the related field of statistical inference are the keys to analyzing data and making scientifically sound predictions.</p>
+<p>The course covers all of the basic probability concepts, including:</p>
+<ul>
+<li><p>multiple discrete or continuous random variables, expectations, and conditional distributions</p>
+</li>
+<li><p>laws of large numbers</p>
+</li>
+<li><p>the main tools of Bayesian inference methods</p>
+</li>
+<li><p>an introduction to random processes (Poisson processes and Markov chains) </p>
+</li>
+</ul>
+<h2 id="Course-objectives"><a href="#Course-objectives" class="headerlink" title="Course objectives"></a>Course objectives</h2><p>Upon successful completion of this course, you will:</p>
+<p>At a conceptual level:</p>
+<ul>
+<li><p>Master the basic concepts associated with probability models.</p>
+</li>
+<li><p>Be able to translate models described in words to mathematical ones.</p>
+</li>
+<li><p>Understand the main concepts and assumptions underlying Bayesian and classical inference.</p>
+</li>
+<li><p>Obtain some familiarity with the range of applications of inference methods. </p>
+</li>
+</ul>
+<p>At a more technical level:</p>
+<ul>
+<li><p>Become familiar with basic and common probability distributions.</p>
+</li>
+<li><p>Learn how to use conditioning to simplify the analysis of complicated models.</p>
+</li>
+<li><p>Have facility manipulating probability mass functions, densities, and expectations.</p>
+</li>
+<li><p>Develop a solid understanding of the concept of conditional expectation and its role in inference.</p>
+</li>
+<li><p>Understand the power of laws of large numbers and be able to use them when appropriate.</p>
+</li>
+<li><p>Become familiar with the basic inference methodologies (for both estimation and hypothesis testing) and be able to apply them.</p>
+</li>
+<li><p>Acquire a good understanding of two stochastic processes and their use in modeling basic random phenomena: the Bernoulli process and the Poisson process.</p>
+</li>
+<li><p>Learn how to formulate simple dynamical models as Markov chains and analyze them. </p>
+</li>
+</ul>
+<h2 id="A-guide-on-how-to-use-the-wealth-of-available-material"><a href="#A-guide-on-how-to-use-the-wealth-of-available-material" class="headerlink" title="A guide on how to use the wealth of available material"></a>A guide on how to use the wealth of available material</h2><p>This class provides you with a great wealth of material, perhaps more than you can fully digest. This “guide” offers some tips about how to use this material.</p>
+<p><strong>Start with the overview of a unit,</strong> when available. This will help you get an overview of what is to happen next. Similarly, at the end of a unit, watch the <strong>unit summary</strong> to consolidate your understanding of the “big picture” and of the relation between different concepts.</p>
+<p><strong>Watch the lecture videos.</strong> You may want to download the slides (clean or annotated) at the beginning of each lecture, especially if you cannot receive high-quality streaming video. Some of the lecture clips proceed at a moderate speed. Whenever you feel comfortable, you may want to speed up the video and run it faster, at 1.5x.</p>
+<p><strong>Do the exercises!</strong> The exercises that follow most of the lecture clips are a most critical part of this class. Some of the exercises are simple adaptations of what you may have just heard. Other exercises will require more thought. Do your best to solve them right after each clip - do not defer this for later - so that you can consolidate your understanding. After your attempt, whether successful or not, do look at the solutions, which you will be able to see as soon as you submit your own answers.</p>
+<p><strong>Solved problems and additional materials.</strong> In most of the units, we are providing you with many problems that are solved by members of our staff. We provide both video clips and written solutions. Depending on your learning style, you may pick and choose which format to focus on. But in either case, it is important that you get exposed to a large number of problems.</p>
+<p><strong>The textbook.</strong> In the textbook you will sometimes find more precise statements of what was discussed in lecture, additional facts, as well as several examples. You should become familiar with its style and structure, and find the most effective way of using it.</p>
+<p><strong>Problem sets.</strong> One can really master the subject only by solving problems - a large number of them. Some of the problems will be straightforward applications of what you have learned. A few of them will be more challenging. Do not despair if you cannot solve a problem - no one is expected to do everything perfectly. However, once the problem set solutions are released (which will happen on the due date of the problem set), make sure to go over the solutions to those problems that you could not solve correctly.</p>
+<p><strong>Exams.</strong> The midterm exams are designed so that in an on-campus version, students would be given two hours. The final exam is designed so that in an on-campus version, students would be given three hours. You should not expect to spend much more than this amount of time on them. In this respect, those weeks that have exams (and no problem sets!) will not have higher demands on your time. The level of difficulty of exam questions will be somewhere between the lecture exercises and homework problems.</p>
+<p><strong>Time management.</strong> The corresponding on-campus class is designed so that students spend about 12 hours each week on lectures, recitations, readings, and homework. You should expect a comparable effort. In a typical week, there will be 2 hours of lecture clips, but it might take you 4-5 hours when you add the time spent on exercises. Plan to spend another 3-4 hours watching solved problems and additional materials, and on textbook readings. Finally, expect about 4 hours spent on the weekly problem sets.</p>
+<p><strong>Additional practice problems.</strong> For those of you who wish to dive even deeper into the subject, you can find a good collection of problems at the end of each chapter of the print edition of the book, whose solutions are available online. </p>
+<h2 id="Syllabus"><a href="#Syllabus" class="headerlink" title="Syllabus"></a>Syllabus</h2><p><strong>Unit 0: Overview</strong> (released Fri. Jan 31)</p>
+<p><strong>Unit 1: Probability models and axioms</strong> (released Tue. Feb 4; Sections 1.1-1.2)<br>L1: Probability models and axioms<br>Problem Set 1 due on Feb 11</p>
+<p><strong>Unit 2: Conditioning and independence</strong> (released Mon. Feb 10; Sections 1.3-1.5)<br>L2: Conditioning and Bayes’ rule<br>L3: Independence<br>Problem Set 2 due on Feb 18</p>
+<p><strong>Unit 3: Counting</strong> (released Mon. Feb 17; Section 1.6)<br>L4: Counting<br>Problem Set 3 due on Feb 25</p>
+<p><strong>Unit 4: Discrete random variables</strong> (released Wed. Feb 19; Sections 2.1-2.7)<br>L5: Probability mass functions and expectations<br>L6: Variance; Conditioning on an event; Multiple r.v.’s<br>L7: Conditioning on a random variable; Independence of r.v.’s<br>Problem Set 4 due on Mar 4</p>
+<p><strong>Exam 1: Covers material from L1 to L7</strong> (released Wed. Mar 5; due on Mar 11)</p>
+<p><strong>Unit 5: Continuous random variables</strong> (released Mon. Mar 3; Sections 3.1-3.5)<br>L8: Probability density functions<br>L9: Conditioning on an event; Multiple r.v.’s<br>L10: Conditioning on a random variable; Independence; Bayes’ rule<br>Problem Set 5 due on Mar 18</p>
+<p><strong>Unit 6: Further topics on random variables</strong> (released Mon. Mar 17; Sections 4.1-4.3, 4.5)<br>L11: Derived distributions<br>L12: Sums of r.v.’s; Covariance and correlation<br>L13: Conditional expectation and variance revisited; Sum of a random number of r.v.’s<br>Problem Set 6 due on Apr 1</p>
+<p><strong>Unit 7: Bayesian inference</strong> (released Mon. Mar 31; Sections 3.6, 8.1-8.4)<br>L14: Introduction to Bayesian inference<br>L15: Linear models with normal noise<br>L16: Least mean squares (LMS) estimation<br>L17: Linear least mean squares (LLMS) estimation<br>Problem Set 7a due on Apr 8<br>Problem Set 7b due on Apr 15</p>
+<p><strong>Exam 2: Covers material from L8 to L17</strong> (released Wed. Apr 16; due on Apr 22)</p>
+<p><strong>Unit 8: Limit theorems and classical statistics</strong> (released Mon. Apr 14; Sections 5.1-5.4, pp. 466-475)<br>L18: Inequalities, convergence, and the Weak Law of Large Numbers<br>L19: The Central Limit Theorem (CLT)<br>L20: An introduction to classical statistics<br>Problem Set 8 due on Apr 29</p>
+<p><strong>Unit 9: Bernoulli and Poisson processes</strong> (released Wed. Apr 23; Sections 6.1-6-2)<br>L21: The Bernoulli process<br>L22: The Poisson process<br>L23: More on the Poisson process<br>Problem Set 9 due on May 6</p>
+<p><strong>Unit 10: Markov chains</strong> (released Mon. May 5; Sections 7.1-7-4)<br>L24: Finite-state Markov chains<br>L25: Steady-state behavior of Markov chains<br>L26: Absorption probabilities and expected time to absorption<br>Problem Set 10 due on May 13</p>
+<p><strong>Final Exam</strong> (released Tue. May 13; due on May 20)</p>
+<p>*<strong>Note: Problem set and exam due dates are at the end of the specified date, at midnight UTC.</strong></p>
+]]></content>
+  </entry>
+  <entry>
+    <title>Style Guide for C Code</title>
+    <url>/2020/11/25/cep8/</url>
+    <content><![CDATA[<h1 id="代码风格"><a href="#代码风格" class="headerlink" title="代码风格"></a>代码风格</h1><h2 id="缩进和对齐"><a href="#缩进和对齐" class="headerlink" title="缩进和对齐"></a>缩进和对齐</h2><p>FMT.01 推荐使用空格进行缩进和对齐，而不是制表符（Tab），每一层级的缩进使用 4 个空格。禁止混合使用空格和 Tab。</p>
+<p>空格还是 Tab？</p>
+<p>Tab 的优点：</p>
+<ol>
+<li>使用 Tab 可以拥有更少的敲击次数；</li>
+<li>使用 Tab 的源程序有更小的空间占用；</li>
+<li>使用 Tab 可以根据自己的喜好调整显示的宽度；</li>
+<li>使用 Tab 可以对整块代码进行缩进和对齐；</li>
+</ol>
+<p>从上述第 3 点可以看出，制表符在不同的编辑器中的显示是不一样的，这正是我们禁止混合使用空格和 Tab 的原因。</p>
+<p>尽管 Tab 拥有诸多的优点，但是在使用时也需要注意一些问题，比如：</p>
+<p>Tab 仅能做好缩进，对于代码块和注释等的对齐，很多时候还是要使用空格配合使用；如果你使用 Tab，请仅在行首使用它。 </p>
+<p>那么空格的优点呢？</p>
+<p>同一份源代码在不同的编辑器下查看的效果都是一致的。</p>
+<p>对于不同的语言有其不同的流行风格，比如 js 等前端开发，经常有很深的嵌套，缩进的占位就比较耗费资源，2 个空格在使用中也比较常见；Go 语言使用 gofmt 默认将代码格式化为按照 Tab 缩进；Python 和 C 的大多数开发者们更加偏爱 4 个空格。</p>
+<p>现代的编辑器大都支持设置将 Tab 转换为空格，除了不能减少多余空格带来的硬盘空间占用外，在使用体验上和原生的 Tab 并没有什么区别。</p>
+]]></content>
+  </entry>
+</search>

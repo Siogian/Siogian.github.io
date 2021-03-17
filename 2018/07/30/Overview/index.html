@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 5.4.0">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Times+New+Roman:300,300italic,400,400italic,700,700italic%7CCascadia+Mono:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.2/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.css">
+  <script src="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.js"></script>
+
+<script class="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"siogian.github.io","root":"/","images":"/images","scheme":"Mist","version":"8.2.2","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":false,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":true,"pangu":true,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}};
+  </script>
+<meta name="description" content="Overview Overview Course introduction Course objectives A guide on how to use the wealth of available material Syllabus    Course introductionWelcome to 6.041x, an introduction to probabilistic models">
+<meta property="og:type" content="article">
+<meta property="og:title" content="6_041x 概率论——不确定性的科学">
+<meta property="og:url" content="https://siogian.github.io/2018/07/30/Overview/index.html">
+<meta property="og:site_name" content="CODEMYMEMORY">
+<meta property="og:description" content="Overview Overview Course introduction Course objectives A guide on how to use the wealth of available material Syllabus    Course introductionWelcome to 6.041x, an introduction to probabilistic models">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2018-07-30T19:44:58.000Z">
+<meta property="article:modified_time" content="2021-03-17T03:03:42.093Z">
+<meta property="article:author" content="凉小秋">
+<meta name="twitter:card" content="summary">
+
+
+<link rel="canonical" href="https://siogian.github.io/2018/07/30/Overview/">
+
+
+<script class="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-CN'
+  };
+</script>
+<title>6_041x 概率论——不确定性的科学 | CODEMYMEMORY</title>
+  
+
+  <script>
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?4fad0e28074762686b6da93c8ff30eb2";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+  <noscript>
+  <style>
+  body { margin-top: 2rem; }
+
+  .use-motion .menu-item,
+  .use-motion .sidebar,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header {
+    visibility: visible;
+  }
+
+  .use-motion .header,
+  .use-motion .site-brand-container .toggle,
+  .use-motion .footer { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle,
+  .use-motion .custom-logo-image {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line {
+    transform: scaleX(1);
+  }
+
+  .search-pop-overlay, .sidebar-nav { display: none; }
+  .sidebar-panel { display: block; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <h1 class="site-title">CODEMYMEMORY</h1>
+      <i class="logo-line"></i>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu">
+        <li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li>
+        <li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a></li>
+        <li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签<span class="badge">4</span></a></li>
+        <li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类<span class="badge">0</span></a></li>
+        <li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档<span class="badge">4</span></a></li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup"><div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off" maxlength="80"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close" role="button">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div class="search-result-container no-result">
+  <div class="search-result-icon">
+    <i class="fa fa-spinner fa-pulse fa-5x"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+        
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Overview"><span class="nav-number">1.</span> <span class="nav-text">Overview</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Course-introduction"><span class="nav-number">1.1.</span> <span class="nav-text">Course introduction</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Course-objectives"><span class="nav-number">1.2.</span> <span class="nav-text">Course objectives</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#A-guide-on-how-to-use-the-wealth-of-available-material"><span class="nav-number">1.3.</span> <span class="nav-text">A guide on how to use the wealth of available material</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Syllabus"><span class="nav-number">1.4.</span> <span class="nav-text">Syllabus</span></a></li></ol></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author site-overview-item animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">凉小秋</p>
+  <div class="site-description" itemprop="description">如果你想为这世界做些什么，仅有理想是不够的，你需要找条通往目标的道路并走完。 -- 理查德·马修·斯托曼 (RMS)</div>
+</div>
+<div class="site-state-wrap site-overview-item animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">4</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">4</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author site-overview-item animated">
+      <span class="links-of-author-item">
+        <a href="https://github.com/siogian" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;siogian" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="mailto:wakeam@outlook.com" title="E-Mail → mailto:wakeam@outlook.com" rel="noopener" target="_blank"><i class="fa fa-envelope fa-fw"></i>E-Mail</a>
+      </span>
+  </div>
+
+
+<div class="cc-license animated" itemprop="sponsor">
+  <a href="https://pages.github.com/" class="cc-opacity" title="Deploy with Github Pages → https://pages.github.com" target="_blank"><img width="80" src="https://pages.github.com/images/logo.svg" alt="Github Pages"></a>
+</div>
+
+        </div>
+      </div>
+    </div>
+  </aside>
+  <div class="sidebar-dimmer"></div>
+
+
+    </header>
+
+    
+  <div class="back-to-top" role="button">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://siogian.github.io/2018/07/30/Overview/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="凉小秋">
+      <meta itemprop="description" content="如果你想为这世界做些什么，仅有理想是不够的，你需要找条通往目标的道路并走完。 -- 理查德·马修·斯托曼 (RMS)">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="CODEMYMEMORY">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          6_041x 概率论——不确定性的科学<a href="https://gitee.com/siogian/siogian/tree/master/source/_posts/Overview.md" class="post-edit-link" title="编辑" rel="noopener" target="_blank"><i class="fa fa-pen-nib"></i></a>
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2018-07-30 19:44:58" itemprop="dateCreated datePublished" datetime="2018-07-30T19:44:58+00:00">2018-07-30</time>
+    </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">更新于</span>
+        <time title="修改时间：2021-03-17 03:03:42" itemprop="dateModified" datetime="2021-03-17T03:03:42+00:00">2021-03-17</time>
+      </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+        <h1 id="Overview"><a href="#Overview" class="headerlink" title="Overview"></a>Overview</h1><ul>
+<li><a href="#overview">Overview</a><ul>
+<li><a href="#course-introduction">Course introduction</a></li>
+<li><a href="#course-objectives">Course objectives</a></li>
+<li><a href="#a-guide-on-how-to-use-the-wealth-of-available-material">A guide on how to use the wealth of available material</a></li>
+<li><a href="#syllabus">Syllabus</a></li>
+</ul>
+</li>
+</ul>
+<h2 id="Course-introduction"><a href="#Course-introduction" class="headerlink" title="Course introduction"></a>Course introduction</h2><p>Welcome to 6.041x, an introduction to probabilistic models, including random processes and the basic elements of statistical inference.</p>
+<p>The world is full of uncertainty: accidents, storms, unruly financial markets, noisy communications. The world is also full of data. Probabilistic modeling and the related field of statistical inference are the keys to analyzing data and making scientifically sound predictions.</p>
+<p>The course covers all of the basic probability concepts, including:</p>
+<ul>
+<li><p>multiple discrete or continuous random variables, expectations, and conditional distributions</p>
+</li>
+<li><p>laws of large numbers</p>
+</li>
+<li><p>the main tools of Bayesian inference methods</p>
+</li>
+<li><p>an introduction to random processes (Poisson processes and Markov chains) </p>
+</li>
+</ul>
+<h2 id="Course-objectives"><a href="#Course-objectives" class="headerlink" title="Course objectives"></a>Course objectives</h2><p>Upon successful completion of this course, you will:</p>
+<p>At a conceptual level:</p>
+<ul>
+<li><p>Master the basic concepts associated with probability models.</p>
+</li>
+<li><p>Be able to translate models described in words to mathematical ones.</p>
+</li>
+<li><p>Understand the main concepts and assumptions underlying Bayesian and classical inference.</p>
+</li>
+<li><p>Obtain some familiarity with the range of applications of inference methods. </p>
+</li>
+</ul>
+<p>At a more technical level:</p>
+<ul>
+<li><p>Become familiar with basic and common probability distributions.</p>
+</li>
+<li><p>Learn how to use conditioning to simplify the analysis of complicated models.</p>
+</li>
+<li><p>Have facility manipulating probability mass functions, densities, and expectations.</p>
+</li>
+<li><p>Develop a solid understanding of the concept of conditional expectation and its role in inference.</p>
+</li>
+<li><p>Understand the power of laws of large numbers and be able to use them when appropriate.</p>
+</li>
+<li><p>Become familiar with the basic inference methodologies (for both estimation and hypothesis testing) and be able to apply them.</p>
+</li>
+<li><p>Acquire a good understanding of two stochastic processes and their use in modeling basic random phenomena: the Bernoulli process and the Poisson process.</p>
+</li>
+<li><p>Learn how to formulate simple dynamical models as Markov chains and analyze them. </p>
+</li>
+</ul>
+<h2 id="A-guide-on-how-to-use-the-wealth-of-available-material"><a href="#A-guide-on-how-to-use-the-wealth-of-available-material" class="headerlink" title="A guide on how to use the wealth of available material"></a>A guide on how to use the wealth of available material</h2><p>This class provides you with a great wealth of material, perhaps more than you can fully digest. This “guide” offers some tips about how to use this material.</p>
+<p><strong>Start with the overview of a unit,</strong> when available. This will help you get an overview of what is to happen next. Similarly, at the end of a unit, watch the <strong>unit summary</strong> to consolidate your understanding of the “big picture” and of the relation between different concepts.</p>
+<p><strong>Watch the lecture videos.</strong> You may want to download the slides (clean or annotated) at the beginning of each lecture, especially if you cannot receive high-quality streaming video. Some of the lecture clips proceed at a moderate speed. Whenever you feel comfortable, you may want to speed up the video and run it faster, at 1.5x.</p>
+<p><strong>Do the exercises!</strong> The exercises that follow most of the lecture clips are a most critical part of this class. Some of the exercises are simple adaptations of what you may have just heard. Other exercises will require more thought. Do your best to solve them right after each clip - do not defer this for later - so that you can consolidate your understanding. After your attempt, whether successful or not, do look at the solutions, which you will be able to see as soon as you submit your own answers.</p>
+<p><strong>Solved problems and additional materials.</strong> In most of the units, we are providing you with many problems that are solved by members of our staff. We provide both video clips and written solutions. Depending on your learning style, you may pick and choose which format to focus on. But in either case, it is important that you get exposed to a large number of problems.</p>
+<p><strong>The textbook.</strong> In the textbook you will sometimes find more precise statements of what was discussed in lecture, additional facts, as well as several examples. You should become familiar with its style and structure, and find the most effective way of using it.</p>
+<p><strong>Problem sets.</strong> One can really master the subject only by solving problems - a large number of them. Some of the problems will be straightforward applications of what you have learned. A few of them will be more challenging. Do not despair if you cannot solve a problem - no one is expected to do everything perfectly. However, once the problem set solutions are released (which will happen on the due date of the problem set), make sure to go over the solutions to those problems that you could not solve correctly.</p>
+<p><strong>Exams.</strong> The midterm exams are designed so that in an on-campus version, students would be given two hours. The final exam is designed so that in an on-campus version, students would be given three hours. You should not expect to spend much more than this amount of time on them. In this respect, those weeks that have exams (and no problem sets!) will not have higher demands on your time. The level of difficulty of exam questions will be somewhere between the lecture exercises and homework problems.</p>
+<p><strong>Time management.</strong> The corresponding on-campus class is designed so that students spend about 12 hours each week on lectures, recitations, readings, and homework. You should expect a comparable effort. In a typical week, there will be 2 hours of lecture clips, but it might take you 4-5 hours when you add the time spent on exercises. Plan to spend another 3-4 hours watching solved problems and additional materials, and on textbook readings. Finally, expect about 4 hours spent on the weekly problem sets.</p>
+<p><strong>Additional practice problems.</strong> For those of you who wish to dive even deeper into the subject, you can find a good collection of problems at the end of each chapter of the print edition of the book, whose solutions are available online. </p>
+<h2 id="Syllabus"><a href="#Syllabus" class="headerlink" title="Syllabus"></a>Syllabus</h2><p><strong>Unit 0: Overview</strong> (released Fri. Jan 31)</p>
+<p><strong>Unit 1: Probability models and axioms</strong> (released Tue. Feb 4; Sections 1.1-1.2)<br>L1: Probability models and axioms<br>Problem Set 1 due on Feb 11</p>
+<p><strong>Unit 2: Conditioning and independence</strong> (released Mon. Feb 10; Sections 1.3-1.5)<br>L2: Conditioning and Bayes’ rule<br>L3: Independence<br>Problem Set 2 due on Feb 18</p>
+<p><strong>Unit 3: Counting</strong> (released Mon. Feb 17; Section 1.6)<br>L4: Counting<br>Problem Set 3 due on Feb 25</p>
+<p><strong>Unit 4: Discrete random variables</strong> (released Wed. Feb 19; Sections 2.1-2.7)<br>L5: Probability mass functions and expectations<br>L6: Variance; Conditioning on an event; Multiple r.v.’s<br>L7: Conditioning on a random variable; Independence of r.v.’s<br>Problem Set 4 due on Mar 4</p>
+<p><strong>Exam 1: Covers material from L1 to L7</strong> (released Wed. Mar 5; due on Mar 11)</p>
+<p><strong>Unit 5: Continuous random variables</strong> (released Mon. Mar 3; Sections 3.1-3.5)<br>L8: Probability density functions<br>L9: Conditioning on an event; Multiple r.v.’s<br>L10: Conditioning on a random variable; Independence; Bayes’ rule<br>Problem Set 5 due on Mar 18</p>
+<p><strong>Unit 6: Further topics on random variables</strong> (released Mon. Mar 17; Sections 4.1-4.3, 4.5)<br>L11: Derived distributions<br>L12: Sums of r.v.’s; Covariance and correlation<br>L13: Conditional expectation and variance revisited; Sum of a random number of r.v.’s<br>Problem Set 6 due on Apr 1</p>
+<p><strong>Unit 7: Bayesian inference</strong> (released Mon. Mar 31; Sections 3.6, 8.1-8.4)<br>L14: Introduction to Bayesian inference<br>L15: Linear models with normal noise<br>L16: Least mean squares (LMS) estimation<br>L17: Linear least mean squares (LLMS) estimation<br>Problem Set 7a due on Apr 8<br>Problem Set 7b due on Apr 15</p>
+<p><strong>Exam 2: Covers material from L8 to L17</strong> (released Wed. Apr 16; due on Apr 22)</p>
+<p><strong>Unit 8: Limit theorems and classical statistics</strong> (released Mon. Apr 14; Sections 5.1-5.4, pp. 466-475)<br>L18: Inequalities, convergence, and the Weak Law of Large Numbers<br>L19: The Central Limit Theorem (CLT)<br>L20: An introduction to classical statistics<br>Problem Set 8 due on Apr 29</p>
+<p><strong>Unit 9: Bernoulli and Poisson processes</strong> (released Wed. Apr 23; Sections 6.1-6-2)<br>L21: The Bernoulli process<br>L22: The Poisson process<br>L23: More on the Poisson process<br>Problem Set 9 due on May 6</p>
+<p><strong>Unit 10: Markov chains</strong> (released Mon. May 5; Sections 7.1-7-4)<br>L24: Finite-state Markov chains<br>L25: Steady-state behavior of Markov chains<br>L26: Absorption probabilities and expected time to absorption<br>Problem Set 10 due on May 13</p>
+<p><strong>Final Exam</strong> (released Tue. May 13; due on May 20)</p>
+<p>*<strong>Note: Problem set and exam due dates are at the end of the specified date, at midnight UTC.</strong></p>
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+            </div>
+            <div class="post-nav-item">
+                <a href="/2019/11/09/Counter-Timer/" rel="next" title="Counter/Timer">
+                  Counter/Timer <i class="fa fa-chevron-right"></i>
+                </a>
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      const activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      const commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+
+<div class="copyright">
+  &copy; 
+  <span itemprop="copyrightYear">2021</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">凉小秋</span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/mist/" class="theme-link" rel="noopener" target="_blank">NexT.Mist</a> 强力驱动
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lozad@1.16.0/dist/lozad.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/pangu@4.0.7/dist/browser/pangu.min.js"></script>
+<script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/schemes/muse.js"></script><script src="/js/next-boot.js"></script>
+
+  
+<script src="/js/local-search.js"></script>
+
+
+
+
+
+  <script>
+    NProgress.configure({
+      showSpinner: true
+    });
+    NProgress.start();
+    document.addEventListener('readystatechange', () => {
+      if (document.readyState === 'interactive') {
+        NProgress.inc(0.8);
+      }
+      if (document.readyState === 'complete') {
+        NProgress.done();
+      }
+    });
+    document.addEventListener('pjax:send', () => {
+      NProgress.start();
+    });
+    document.addEventListener('pjax:success', () => {
+      NProgress.done();
+    });
+  </script>
+
+  
+
+
+
+
+
+</body>
+</html>
